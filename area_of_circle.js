@@ -4,7 +4,7 @@ var r =16;
 
 
 //Calculations
-var area= pi * r * r;
+var area = pi * r * r;
 
 //OUTPUT
  comsole.log(" The area of a circle with radius " + r + " is " area);
