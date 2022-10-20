@@ -45,12 +45,12 @@ taxRate= 0
 
 
 
- if(filingstatus== "single" && annualIncome <= 24999.99)
+ if(filingstatus== "single" && annualIncome < 25000)
  {
     taxRate= .1
  }
 
- else if(filingstatus= "married" && annualIncome<=24999.99)
+ else if(filingstatus= "married" && annualIncome<=25000)
  {
 taxRate= .06
  }
@@ -58,11 +58,11 @@ taxRate= .06
     
  
  
-    if(filingstatus== "single" && annualIncome <= 74999.99)
+    if(filingstatus== "single" && annualIncome <75000)
  {
     taxRate= .15
  }
-  else if(filingstatus= "married"&& annualIncome<=74999.99)
+  else if(filingstatus= "married"&& annualIncome<75000)
  {
 taxRate= .11
  }
@@ -75,5 +75,10 @@ taxRate= .11
  var netpay= grosspay - withHolding
 
  console.log(grosspay)
+
+console.log( "You worked " + hoursWorked + " hours this period. Because you earn " + hoursWorked + " per hour, your gross pay is " +"\n"+ grosspay + "Your filing status " + filingstatus +
+" Your tax withholdings this period is " + withHolding +
+" Your net pay is " + netpay)
+
 
  
